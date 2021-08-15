@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## References
+* [Use filereader to read csv file](https://stackoverflow.com/questions/51272255/how-to-use-filereader-in-react/51278185)
+* [convert csv to json](https://stackoverflow.com/questions/27979002/convert-csv-data-into-json-format-using-javascript)
