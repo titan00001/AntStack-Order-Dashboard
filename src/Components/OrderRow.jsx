@@ -1,13 +1,20 @@
+import sanitizeItem from "../Services/sanitizeItem";
+
 function OrderRow(props) {
 
     const order = props.order;
-    // console.log(orderList)
+    // console.log(order)
 
     return (
       <tr>
           {
               Object.keys(order).map((item, id) => {
-                  return <td key = {id}>{order[item]}</td>
+                  if(!item.includes('items')) {
+                    return <td className = "table-data" key = {id}>{order[item]}</td>
+                  } else {
+                    return <td className = "table-data" key = {id}>{sanitizeItem(order[item])}</td>
+                  }
+                  
               })
               
           }

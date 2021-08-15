@@ -1,5 +1,6 @@
 import OrderRow from "./OrderRow";
 import filterOrders from "../Services/filterOrders";
+import titlePipe from "../Services/titlePipe";
 
 function Table(props) {
 
@@ -9,13 +10,13 @@ function Table(props) {
     orderList = filterOrders(props.searchPincode, props.searchDate, orderList);
 
     return (
-      <table>
+      <table className="order-table">
           
         <thead>
             <tr>
             {
                 headers.map((header, id) => {
-                    return <th key={id}>{header}</th>
+                    return <th className = "table-data table-head" key={id}>{titlePipe(header)}</th>
                 })
             }
             </tr>

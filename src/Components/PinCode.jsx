@@ -12,7 +12,7 @@ function PinCode(props) {
       props.getPincode(pincode)
       setMsg('');
     } catch (e) {
-      console.error(e.message);
+      // console.error(e.message);
       setMsg(e.message);
       props.getPincode('');
     }

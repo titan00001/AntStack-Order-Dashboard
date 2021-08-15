@@ -1,6 +1,8 @@
 const validatePincode = (pincode) => {
 
-    if(! /^\d+$/.test(pincode) && pincode !== '') {
+    if(pincode === '') return pincode;
+    
+    if(! /^\d+$/.test(pincode)) {
         throw Error("Pincode is not a number")
     }
 
